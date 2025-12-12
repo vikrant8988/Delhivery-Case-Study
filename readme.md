@@ -28,18 +28,15 @@ Analyze Delhivery’s logistics data to quantify gaps between OSRM-predicted vs.
 1. **Statistically proven with correct methodology**: OSRM significantly underestimates both distance and time (Even after confirming non-normality via Shapiro-Wilk, the paired Wilcoxon test (p < 2.2e-16) confirms systematic underestimation.  
 2. Bengaluru dominates operations; inconsistent naming (Bangalore/Bengaluru) inflates intra-city numbers.  
 3. Strong intra-city loops in Hyderabad & Mumbai region; high directional imbalance on Delhi → Haryana lane.  
-4. Clear temporal patterns: evening peak (8–11 PM), mid-week peak (Wednesday), mid-month surge, and sharp drop after 25th.  
-5. Real-world traffic, loading/unloading delays, and non-optimal routing are primary drivers of OSRM gaps.
+4. Clear patterns: evening peak (8–11 PM), mid-week peak (Wednesday), mid-month surge, and sharp drop after 25th.  
 
 ### Business Recommendations  
 
 | Recommendation                                          | Expected Impact                                                                 |
 |---------------------------------------------------------|---------------------------------------------------------------------------------|
-| Retrain OSRM model using Delhivery’s actual trip data   | 15–25% reduction in planning errors → 10–15% improvement in on-time delivery   |
+| Recalibrate OSRM model using Delhivery’s actual trip data   | 15–25% reduction in planning errors → 10–15% improvement in on-time delivery   |
 | Expand fleet & hub capacity in Bengaluru                | Capture dominant volume → 20–30% revenue uplift in top market                   |
 | Implement dynamic back-haul on imbalanced lanes (e.g., Delhi → Haryana) | Reduce empty miles by 12–18% → 4–7% fuel & operational cost savings            |
 | Shift manpower & vehicles to 6 PM–12 AM window + Wednesdays | Increase peak-hour throughput by 25%, cut overtime costs by 15%                 |
 | Pre-position extra resources for mid-month & festival weeks | Handle 20–40% volume spikes without delays → protect SLA & customer NPS        |
 | Standardize city naming & introduce micro-hubs in Bengaluru | Cleaner data + faster intra-city turns → 8–12% efficiency gain                  |
-
-This analysis, backed by rigorous non-parametric hypothesis testing (Shapiro-Wilk + Wilcoxon), provides **irrefutable statistical evidence** of OSRM underestimation and delivers clear, prioritized, high-impact actions for Delhivery’s operations, planning, and tech teams. Ready for stakeholder presentation or portfolio showcase.
